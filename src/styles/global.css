@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  @apply antialiased text-zinc-300 bg-zinc-900;
+}
+
+@layer components {
+  .paragraph {
+    @apply text-sm sm:text-base lg:text-sm xl:text-base;
+  }
+
+  .items > .item-wrapper:not(:last-child) {
+    @apply mb-10;
+  }
+
+  .item-wrapper {
+    @apply relative;
+  }
+
+  .item-layout {
+    @apply ml-3 sm:ml-auto lg:ml-3 xl:ml-auto;
+    @apply pl-6 sm:pl-0 lg:pl-6 xl:pl-0;
+    @apply sm:grid lg:block xl:grid;
+    @apply sm:grid-cols-[7rem_1fr] lg:grid-cols-none xl:grid-cols-[7rem_1fr];
+    @apply sm:gap-12;
+  }
+
+  .items > .item-wrapper:not(:last-child) > .item-layout {
+    @apply before:absolute before:h-[calc(100%+2.5rem)] before:top-2 before:-ml-6 before:w-[2px] before:bg-zinc-800 before:-translate-x-1/2;
+    @apply before:sm:top-[0.625rem] before:sm:ml-[8.5rem];
+    @apply before:lg:top-2 before:lg:-ml-6;
+    @apply before:xl:top-[0.625rem] before:xl:ml-[8.5rem];
+  }
+
+  .items > .item-wrapper > .item-layout {
+    @apply after:absolute after:top-0 after:-ml-6 after:h-4 after:aspect-square after:border-[5px] after:border-zinc-900 after:bg-indigo-900 after:rounded-full after:-translate-x-1/2;
+    @apply after:sm:top-[0.125rem] after:sm:ml-[8.5rem];
+    @apply after:lg:top-0 after:lg:-ml-6;
+    @apply after:xl:top-[0.125rem] after:xl:ml-[8.5rem];
+  }
+
+  .item-date-range {
+    @apply leading-4 text-sm font-medium tracking-tight text-zinc-50;
+    @apply sm:mt-[0.125rem] lg:mt-0 xl:mt-[0.125rem];
+    @apply sm:text-right lg:text-left xl:text-right;
+  }
+
+  .date-range {
+    @apply block;
+  }
+
+  .item-infos {
+    @apply mt-1 sm:mt-0 lg:mt-1 xl:mt-0;
+  }
+
+  .item-title {
+    @apply leading-5 font-semibold tracking-tight text-zinc-50;
+  }
+
+  .item-organization {
+    @apply mt-1 leading-5 tracking-tight;
+  }
+}
+
+@layer utilities {
+  .font-feature-custom {
+    font-feature-settings: "cv11", "ss01";
+  }
+
+  .no-scroll {
+    overflow: hidden;
+  }
+}

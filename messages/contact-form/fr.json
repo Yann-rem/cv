@@ -1,0 +1,50 @@
+{
+  "labels": {
+    "first_name": "Prénom",
+    "last_name": "Nom",
+    "email": "Courriel",
+    "phone": "Téléphone",
+    "subject": "Sujet",
+    "message": "Message",
+    "submit": "Envoyer"
+  },
+  "validation": {
+    "first_name": {
+      "required": "Prénom requis",
+      "min": "2 caractères minimum",
+      "max": "50 caractères maximum"
+    },
+    "last_name": {
+      "required": "Nom requis",
+      "min": "2 caractères minimum",
+      "max": "50 caractères maximum"
+    },
+    "email": {
+      "required": "Courriel requis",
+      "invalid": "Courriel invalide"
+    },
+    "phone": {
+      "required": "Numéro requis",
+      "invalid": "Numéro invalide"
+    },
+    "subject": {
+      "required": "Sujet requis",
+      "min": "5 caractères minimum",
+      "max": "100 caractères maximum"
+    },
+    "message": {
+      "required": "Message requis",
+      "min": "20 caractères minimum",
+      "max": "2000 caractères maximum"
+    }
+  },
+  "submit_success": {
+    "title": "Votre message a été envoyé avec succès\u00A0!",
+    "subtitle": "Je vous répondrai dans les plus brefs délais."
+  },
+  "submit_error": {
+    "server_configuration": "Erreur de configuration du serveur.",
+    "internal_error": "Une erreur interne est survenue. Veuillez réessayer.",
+    "generic": "Une erreur inattendue est survenue. Veuillez réessayer."
+  }
+}

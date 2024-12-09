@@ -1,0 +1,7 @@
+.items {
+  @apply space-y-10;
+}
+
+.item-subtitle {
+  @apply text-lg font-semibold tracking-tight text-zinc-50;
+}

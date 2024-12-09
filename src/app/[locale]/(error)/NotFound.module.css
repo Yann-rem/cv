@@ -1,0 +1,19 @@
+.container {
+  @apply flex flex-col items-center;
+}
+
+.status {
+  @apply font-display text-8xl font-extrabold;
+}
+
+.title {
+  @apply font-display text-2xl font-semibold mt-4;
+}
+
+.description {
+  @apply text-lg mt-2;
+}
+
+.link {
+  @apply flex items-center justify-center mt-4 py-2 px-4 min-h-9 font-medium text-zinc-50 bg-indigo-500 hover:bg-indigo-600 rounded transition-colors;
+}

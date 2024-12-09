@@ -1,0 +1,39 @@
+.menu-button {
+  @apply flex items-center space-x-2 text-zinc-400 transition-colors;
+}
+
+.menu-button--active {
+  @apply text-zinc-50;
+}
+
+.menu-button--inactive {
+  @apply hover:text-zinc-50;
+}
+
+.globe-icon {
+  @apply w-4 h-auto;
+}
+
+.current-language-label {
+  @apply text-sm;
+}
+
+.down-arrow-icon {
+  @apply w-4 h-auto;
+}
+
+.menu {
+  @apply absolute mb-2 p-1 w-28 bottom-full text-sm border border-zinc-700 bg-zinc-800 rounded shadow-md;
+}
+
+.language-wrapper {
+  @apply p-1 hover:text-zinc-50 hover:bg-indigo-500 rounded transition-colors;
+}
+
+.language-button {
+  @apply flex items-center space-x-2;
+}
+
+.check-icon {
+  @apply w-4 h-auto;
+}

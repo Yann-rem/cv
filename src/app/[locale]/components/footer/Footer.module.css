@@ -1,0 +1,7 @@
+.external-link {
+  @apply font-medium text-zinc-50;
+}
+
+.paragraph {
+  @apply text-sm text-zinc-400;
+}

@@ -1,0 +1,30 @@
+{
+  "programming_languages": {
+    "title": "Langages de Programmation",
+    "list": "Python, JavaScript, TypeScript, HTML, CSS, Sass, VBA"
+  },
+  "libraries_frameworks": {
+    "title": "Bibliothèques & Frameworks",
+    "list": "React, Next.js, Django, FastAPI, SQLAlchemy, Pydantic, Electron, PixiJS, GSAP, Framer Motion, Tailwind CSS, Bootstrap"
+  },
+  "tools_platforms": {
+    "title": "Outils & Plateformes",
+    "list": "Node.js, Git, GitHub, Vite.js, Vercel, Webpack, Rollup, Figma, Anaconda, Jupyter"
+  },
+  "data_databases": {
+    "title": "Données & Bases de Données",
+    "list": "SQLite, PostgreSQL, MySQL"
+  },
+  "testing": {
+    "title": "Testing",
+    "list": "Pytest, jest, Cypress"
+  },
+  "data_science_visualization": {
+    "title": "Science des Données & Visualisation",
+    "list": "Matplotlib, Numpy"
+  },
+  "additional_expertise": {
+    "title": "Expertise Supplémentaire",
+    "list": "Shaders (Projets de rendu graphique avec PixiJS et WebGL)"
+  }
+}

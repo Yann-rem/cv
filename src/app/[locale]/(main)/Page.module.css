@@ -1,0 +1,40 @@
+.hero-section {
+  @apply block lg:hidden;
+}
+
+.social-media-links {
+  @apply flex items-center mt-8 space-x-5;
+}
+
+.section {
+  @apply lg:mt-24 -scroll-m-6 lg:scroll-m-24;
+}
+
+.about-section {
+  @apply lg:mt-auto lg:scroll-auto;
+}
+
+.contact-section {
+  @apply min-h-[calc(100vh-8.75rem)] lg:min-h-[calc(100vh-19.25rem)];
+}
+
+.section-title-wrapper {
+  @apply sticky lg:static flex items-center gap-2 bg-zinc-900 lg:bg-transparent z-10;
+  @apply mb-8 lg:mb-12 pt-24 lg:pt-0 pb-4 lg:pb-0 -top-6 lg:top-auto;
+}
+
+.section-title-wrapper--right {
+  @apply flex-row-reverse;
+}
+
+.section-title {
+  @apply font-display text-2xl sm:text-3xl font-bold tracking-tighter text-zinc-50;
+}
+
+.section-title-dot {
+  @apply text-indigo-500;
+}
+
+.section-divider {
+  @apply flex-1 h-[1px] bg-zinc-700;
+}

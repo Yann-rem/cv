@@ -1,0 +1,7 @@
+.link {
+  @apply text-zinc-400;
+}
+
+.icon {
+  @apply w-6 h-auto scale-90;
+}

@@ -1,0 +1,105 @@
+/* === Contact Form === */
+.layout {
+  @apply grid xs:grid-cols-2 gap-x-4 xs:gap-y-2;
+}
+
+.field--full-width {
+  @apply xs:col-span-2;
+}
+
+.field {
+  @apply space-y-2;
+}
+
+.label {
+  @apply text-sm text-zinc-50;
+}
+
+.input-container {
+  @apply relative after:absolute after:pointer-events-none after:w-full after:h-full after:left-0 after:rounded;
+}
+
+.input-container::after {
+  transition: border-width 150ms ease-out, border-color 150ms ease-out;
+}
+
+.input-container--border-normal {
+  @apply after:border after:border-zinc-50/5 focus-within:after:border-2 focus-within:after:border-indigo-500;
+}
+
+.input-container--border-error {
+  @apply after:border-2 after:border-red-600;
+}
+
+.input {
+  @apply px-3 py-2 w-full text-sm bg-zinc-50/10 rounded outline-none;
+}
+
+.textarea {
+  @apply input align-top resize-none;
+}
+
+.error-container {
+  @apply min-h-4;
+}
+
+.error-content {
+  @apply flex items-center space-x-2 text-red-600;
+}
+
+.error-icon {
+  @apply w-3 h-auto;
+}
+
+.error-message {
+  @apply text-xs font-medium;
+}
+
+.button {
+  @apply flex items-center justify-center mt-2 py-2 px-4 min-h-9 text-sm font-medium text-zinc-50 rounded transition-colors;
+}
+
+.button--background-normal {
+  @apply bg-indigo-500 hover:bg-indigo-600;
+}
+
+.button--background-error {
+  @apply bg-red-600;
+}
+
+.spinner-icon {
+  @apply w-5 h-auto;
+}
+
+/* === Success Overlay === */
+.container {
+  @apply fixed flex items-center justify-center inset-0 bg-zinc-900/95 opacity-0 z-30;
+}
+
+.content {
+  @apply grid grid-rows-[1fr_1fr] max-w-[80%];
+}
+
+.success-icon-container {
+  @apply flex items-center justify-center translate-y-1/2;
+}
+
+.success-icon-box {
+  @apply p-1 text-zinc-50 border border-zinc-50/5 bg-zinc-800 rounded;
+}
+
+.success-icon {
+  @apply w-6 md:w-8 h-auto;
+}
+
+.success-message-container {
+  @apply text-center;
+}
+
+.success-message-title {
+  @apply mt-1 md:mt-2 md:font-display text-xl md:text-3xl font-semibold text-zinc-50 opacity-0 -translate-y-1/2;
+}
+
+.success-message-subtitle {
+  @apply mt-1 md:mt-2 md:font-display text-lg md:text-2xl text-zinc-500 opacity-0 -translate-y-1/2;
+}

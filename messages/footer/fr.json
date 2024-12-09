@@ -1,0 +1,8 @@
+{
+  "paragraph": "Créé avec <nextjs>Next.js</nextjs> et déployé via <vercel>Vercel</vercel>.",
+  "aria-label": "{name} - ouvre un nouvel onglet",
+  "frameworks": {
+    "next_js": "Next.js",
+    "vercel": "Vercel"
+  }
+}

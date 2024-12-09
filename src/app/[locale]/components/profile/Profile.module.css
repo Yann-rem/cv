@@ -1,0 +1,11 @@
+.title {
+  @apply font-display text-4xl sm:text-5xl font-bold tracking-tighter text-zinc-50;
+}
+
+.title-dot {
+  @apply text-indigo-500;
+}
+
+.subtitle {
+  @apply mt-1 sm:mt-2 text-lg sm:text-xl font-medium tracking-tight text-zinc-50;
+}

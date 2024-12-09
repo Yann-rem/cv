@@ -1,0 +1,14 @@
+{
+  "back_to_top": "Retour en haut de la page",
+  "mobile_menu_toggle": {
+    "open": "Ouvrir le menu mobile",
+    "close": "Fermer le menu mobile"
+  },
+  "nav_links": {
+    "about": "À propos",
+    "skills": "Compétences",
+    "experience": "Expérience",
+    "education": "Formation",
+    "contact": "Contact"
+  }
+}
