@@ -1,21 +1,21 @@
 {
-  "experience_1": {
+  "experience1": {
     "date_range": "2001–2003",
     "title": "Équipier Polyvalent",
-    "company": "McDonald's, Metz (57) · Restauration rapide"
+    "company": "McDonald’s, Metz (57) · Restauration rapide"
   },
-  "experience_2": {
+  "experience2": {
     "date_range": "2004–2007",
     "title": "Agent de Production",
     "company": "Panilor, Terville (57) · Boulangerie industrielle"
   },
-  "experience_3": {
+  "experience3": {
     "date_range": "2007–2008",
     "title": "Secrétaire Assistant",
     "company": "Hartema, Dudelange (Luxembourg) · Montage de constructions modulaires",
     "description": ["Accueil téléphonique", "Classement des factures"]
   },
-  "experience_4": {
+  "experience4": {
     "date_range": "2008",
     "title": "Chargé de Clientèle",
     "company": "Arvato, Metz (57) · Prestataire de services pour le client EDF",
@@ -24,30 +24,30 @@
       "Appels sortants : prospection auprès de la clientèle pour la vente de services complémentaires"
     ]
   },
-  "experience_5": {
+  "experience5": {
     "date_range": "2009–2010",
     "title": "Assistant en Ressources Humaines (stage de 6 mois)",
     "company": "Converteam, Champigneulles (54) · Fabricant de moteurs électriques",
     "description": [
-      "Élaboration d'un outil de gestion des habilitations professionnelles (CACES, SST, électricité...) de 300 salariés et réalisation du schéma de procédure relatif à son utilisation",
-      "Création d'un système de classement des salariés de l'entreprise",
-      "Participation à la conception du journal de l'entreprise à l'aide d'outils de Publication Assistée par Ordinateur",
+      "Élaboration d’un outil de gestion des habilitations professionnelles (CACES, SST, électricité...) de 300 salariés et réalisation du schéma de procédure relatif à son utilisation",
+      "Création d’un système de classement des salariés de l’entreprise",
+      "Participation à la conception du journal de l’entreprise à l’aide d’outils de Publication Assistée par Ordinateur",
       "Conception et présentation du plan de formation",
       "Organisation de déplacements",
       "Accueil physique et téléphonique"
     ],
-    "technologies_used": ["VBA Excel", "VBA Access", "InDesign"]
+    "technologies_used": ["VBA", "Excel", "Access", "InDesign"]
   },
-  "experience_6": {
+  "experience6": {
     "date_range": "2024–Présent",
     "title": "Développeur Web",
-    "company": "Indépendant · Création d'un site web",
+    "company": "Indépendant · Création d’un site web",
     "description": [
       "Collaboration étroite avec le client pour définir les exigences du projet et adapter les fonctionnalités du site",
-      "Maquettage du site et création du logo de l'entreprise",
+      "Maquettage du site et création du logo de l’entreprise",
       "Développement de la partie serveur avec validation des données et interaction avec la base de données",
-      "Conception d'une interface utilisateur conviviale et réactive, adaptée aux besoins spécifiques du client",
-      "Mise en place de tests unitaires et d'intégrations pour assurer la qualité du code"
+      "Conception d’une interface utilisateur conviviale et réactive, adaptée aux besoins spécifiques du client",
+      "Mise en place de tests unitaires et d’intégrations pour assurer la qualité du code"
     ],
     "technologies_used": [
       "JavaScript",

@@ -17,7 +17,7 @@
   },
   "testing": {
     "title": "Testing",
-    "list": "Pytest, jest, Cypress"
+    "list": "Pytest, Jest, Cypress"
   },
   "data_science_visualization": {
     "title": "Science des Données & Visualisation",

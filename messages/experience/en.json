@@ -1,21 +1,21 @@
 {
-  "experience_1": {
+  "experience1": {
     "date_range": "2001–2003",
-    "title": "Crew Member",
-    "company": "McDonald's, Metz (57) · Fast Food"
+    "title": "Versatile Team Member",
+    "company": "McDonald’s, Metz (57) · Fast Food"
   },
-  "experience_2": {
+  "experience2": {
     "date_range": "2004–2007",
     "title": "Production Operator",
     "company": "Panilor, Terville (57) · Industrial Bakery"
   },
-  "experience_3": {
+  "experience3": {
     "date_range": "2007–2008",
     "title": "Secretary Assistant",
     "company": "Hartema, Dudelange (Luxembourg) · Modular Construction Assembly",
     "description": ["Phone reception", "Invoice filing"]
   },
-  "experience_4": {
+  "experience4": {
     "date_range": "2008",
     "title": "Customer Advisor",
     "company": "Arvato, Metz (57) · Service provider for EDF",
@@ -24,21 +24,21 @@
       "Outbound calls: prospecting customers for selling additional services"
     ]
   },
-  "experience_5": {
+  "experience5": {
     "date_range": "2009–2010",
     "title": "Human Resources Assistant (6-month internship)",
     "company": "Converteam, Champigneulles (54) · Electric Motor Manufacturer",
     "description": [
       "Developed a management tool for professional certifications (CACES, SST, electricity, etc.) for 300 employees and created a procedure diagram for its use",
-      "Created a classification system for the company's employees",
-      "Contributed to the company's newsletter design using Desktop Publishing tools",
+      "Created a classification system for the company’s employees",
+      "Contributed to the company’s newsletter design using Desktop Publishing Software",
       "Designed and presented the training plan",
       "Organized business trips",
       "Managed physical and phone reception"
     ],
-    "technologies_used": ["VBA Excel", "VBA Access", "InDesign"]
+    "technologies_used": ["VBA", "Excel", "Access", "InDesign"]
   },
-  "experience_6": {
+  "experience6": {
     "date_range": "2024–Present",
     "title": "Web Developer",
     "company": "Freelance · Website creation",
@@ -46,7 +46,7 @@
       "Worked closely with the client to define project requirements and adapt site functionalities",
       "Created site mockups and designed the company logo",
       "Developed the server-side with data validation and database interaction",
-      "Designed a user-friendly, responsive interface tailored to the client's specific needs",
+      "Designed a user-friendly, responsive interface tailored to the client’s specific needs",
       "Implemented unit and integration tests to ensure code quality"
     ],
     "technologies_used": [
