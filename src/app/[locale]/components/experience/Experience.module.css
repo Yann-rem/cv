@@ -1,19 +1,26 @@
+/* === Item Descriptions === */
 .item-descriptions {
+  /* Vertical list with spacing and indentation for items */
   @apply mt-3 pl-4 space-y-1 list-none text-sm;
 }
 
 .item-description {
+  /* Prepend a dash (‐) symbol before each description item */
   @apply before:content-["‐"] before:absolute before:-ml-3;
 }
 
+/* === Item Technologies === */
 .item-technologies {
+  /* Flexible layout for wrapping technology badges */
   @apply mt-2 flex flex-wrap;
 }
 
 .item-technology-wrapper {
+  /* Wrapper for individual technology badges */
   @apply mt-2 mr-[6px];
 }
 
 .item-technology-badge {
+  /* Styling for technology badges with indigo color scheme */
   @apply px-2 py-[0.1875rem] text-xs font-medium text-indigo-500 border border-indigo-500/20 bg-indigo-500/10 rounded;
 }

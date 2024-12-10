@@ -1,3 +1,5 @@
+/* === Paragraphs === */
 .paragraphs {
+  /* Adds vertical spacing between child elements */
   @apply space-y-4;
 }

@@ -1,11 +1,16 @@
+/* === Title === */
 .title {
+  /* Main title styling */
   @apply font-display text-4xl sm:text-5xl font-bold tracking-tighter text-zinc-50;
 }
 
 .title-dot {
+  /* Dot style for the title */
   @apply text-indigo-500;
 }
 
+/* === Subtitle === */
 .subtitle {
+  /* Subtitle styling with spacing and font size adjustments */
   @apply mt-1 sm:mt-2 text-lg sm:text-xl font-medium tracking-tight text-zinc-50;
 }

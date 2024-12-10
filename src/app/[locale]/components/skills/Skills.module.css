@@ -1,7 +1,11 @@
+/* === Items List === */
 .items {
+  /* Spacing between items */
   @apply space-y-10;
 }
 
+/* === Item Subtitle === */
 .item-subtitle {
+  /* Subtitle styling for items */
   @apply text-lg font-semibold tracking-tight text-zinc-50;
 }

@@ -1,7 +1,11 @@
+/* === External Link === */
 .external-link {
+  /* Styled for emphasis with medium weight and light text color */
   @apply font-medium text-zinc-50;
 }
 
+/* === Paragraph === */
 .paragraph {
+  /* Standard paragraph style with small text and muted color */
   @apply text-sm text-zinc-400;
 }

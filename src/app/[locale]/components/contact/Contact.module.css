@@ -1,105 +1,136 @@
-/* === Contact Form === */
+/* === Contact Form Layout === */
 .layout {
+  /* Grid layout with responsive column and row gaps */
   @apply grid xs:grid-cols-2 gap-x-4 xs:gap-y-2;
 }
 
 .field--full-width {
+  /* Full width field for spanning multiple columns */
   @apply xs:col-span-2;
 }
 
 .field {
+  /* Vertical spacing for form fields */
   @apply space-y-2;
 }
 
+/* === Labels === */
 .label {
+  /* Styling for form labels */
   @apply text-sm text-zinc-50;
 }
 
+/* === Input Containers === */
 .input-container {
+  /* Base styles and positioning for input containers */
   @apply relative after:absolute after:pointer-events-none after:w-full after:h-full after:left-0 after:rounded;
 }
 
 .input-container::after {
+  /* Transition effect for borders */
   transition: border-width 150ms ease-out, border-color 150ms ease-out;
 }
 
 .input-container--border-normal {
+  /* Normal border styles, highlighted on focus */
   @apply after:border after:border-zinc-50/5 focus-within:after:border-2 focus-within:after:border-indigo-500;
 }
 
 .input-container--border-error {
+  /* Error border styles */
   @apply after:border-2 after:border-red-600;
 }
 
+/* === Inputs and Textareas === */
 .input {
+  /* Base input styling */
   @apply px-3 py-2 w-full text-sm bg-zinc-50/10 rounded outline-none;
 }
 
 .textarea {
+  /* Extend input styles for textarea with additional alignment and behavior */
   @apply input align-top resize-none;
 }
 
+/* === Error Messaging === */
 .error-container {
+  /* Container for error messages */
   @apply min-h-4;
 }
 
 .error-content {
+  /* Flex layout for error icons and text */
   @apply flex items-center space-x-2 text-red-600;
 }
 
 .error-icon {
+  /* Sizing for error icon */
   @apply w-3 h-auto;
 }
 
 .error-message {
+  /* Text styling for error messages */
   @apply text-xs font-medium;
 }
 
+/* === Buttons === */
 .button {
+  /* Base button styling with transitions */
   @apply flex items-center justify-center mt-2 py-2 px-4 min-h-9 text-sm font-medium text-zinc-50 rounded transition-colors;
 }
 
 .button--background-normal {
+  /* Default button background with hover effect */
   @apply bg-indigo-500 hover:bg-indigo-600;
 }
 
 .button--background-error {
+  /* Error button background */
   @apply bg-red-600;
 }
 
 .spinner-icon {
+  /* Sizing for spinner icon */
   @apply w-5 h-auto;
 }
 
 /* === Success Overlay === */
 .container {
+  /* Full-screen fixed overlay */
   @apply fixed flex items-center justify-center inset-0 bg-zinc-900/95 opacity-0 z-30;
 }
 
 .content {
+  /* Grid layout for success message content */
   @apply grid grid-rows-[1fr_1fr] max-w-[80%];
 }
 
 .success-icon-container {
+  /* Centering the success icon */
   @apply flex items-center justify-center translate-y-1/2;
 }
 
 .success-icon-box {
+  /* Box surrounding the success icon */
   @apply p-1 text-zinc-50 border border-zinc-50/5 bg-zinc-800 rounded;
 }
 
 .success-icon {
+  /* Sizing for success icon */
   @apply w-6 md:w-8 h-auto;
 }
 
 .success-message-container {
+  /* Center-aligned success messages */
   @apply text-center;
 }
 
 .success-message-title {
+  /* Title for success message with animation-ready opacity and translation */
   @apply mt-1 md:mt-2 md:font-display text-xl md:text-3xl font-semibold text-zinc-50 opacity-0 -translate-y-1/2;
 }
 
 .success-message-subtitle {
-  @apply mt-1 md:mt-2 md:font-display text-lg md:text-2xl text-zinc-500 opacity-0 -translate-y-1/2;
+  /* Subtitle for success message with animation-ready opacity */
+  @apply mt-1 md:mt-2 md:font-display text-lg md:text-2xl text-zinc-500 opacity-0;
 }

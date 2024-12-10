@@ -1,19 +1,28 @@
+/* === Page Wrapper === */
 .page-wrapper {
+  /* General spacing and layout */
   @apply mx-auto mt-[4.5rem] lg:mt-0 px-6 md:px-12 lg:px-24 py-12 lg:py-0 max-w-screen-xl;
 }
 
+/* === Page Layout === */
 .page-layout {
+  /* Flexbox layout for larger screens */
   @apply lg:flex lg:justify-between lg:gap-4;
 }
 
+/* === Navbar === */
 .navbar {
+  /* Positioning and layout */
   @apply fixed lg:sticky lg:flex-1 lg:py-24 lg:h-screen top-0 left-0 right-0 lg:left-auto lg:right-auto z-20;
 }
 
+/* === Main Footer Wrapper === */
 .main-footer-wrapper {
   @apply lg:flex-1 lg:py-24 lg:min-h-screen;
 }
 
+/* === Footer === */
 .footer {
+  /* Spacing */
   @apply mt-24;
 }

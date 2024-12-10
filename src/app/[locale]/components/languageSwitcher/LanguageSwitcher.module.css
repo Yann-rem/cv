@@ -1,39 +1,53 @@
+/* === Menu Button === */
 .menu-button {
+  /* Flex container for menu button with spacing and transition */
   @apply flex items-center space-x-2 text-zinc-400 transition-colors;
 }
 
 .menu-button--active {
+  /* Active state with highlighted text color */
   @apply text-zinc-50;
 }
 
 .menu-button--inactive {
+  /* Inactive state with hover effect */
   @apply hover:text-zinc-50;
 }
 
+/* === Menu Iconography === */
 .globe-icon {
+  /* Styling for globe icon */
   @apply w-4 h-auto;
 }
 
 .current-language-label {
+  /* Text styling for the current language label */
   @apply text-sm;
 }
 
 .down-arrow-icon {
+  /* Styling for down arrow icon */
   @apply w-4 h-auto;
 }
 
+/* === Dropdown Menu === */
 .menu {
+  /* Dropdown menu container with positioning, border, and background */
   @apply absolute mb-2 p-1 w-28 bottom-full text-sm border border-zinc-700 bg-zinc-800 rounded shadow-md;
 }
 
+/* === Language Options === */
 .language-wrapper {
+  /* Language option with hover effects and rounded corners */
   @apply p-1 hover:text-zinc-50 hover:bg-indigo-500 rounded transition-colors;
 }
 
 .language-button {
+  /* Flex container for language button with spacing */
   @apply flex items-center space-x-2;
 }
 
 .check-icon {
+  /* Styling for checkmark icon */
   @apply w-4 h-auto;
 }

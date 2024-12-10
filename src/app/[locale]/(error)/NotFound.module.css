@@ -1,19 +1,29 @@
+/* === Container === */
 .container {
+  /* Flex column layout, center alignment */
   @apply flex flex-col items-center;
 }
 
+/* === Status === */
 .status {
+  /* Large, bold, and prominent text for status codes */
   @apply font-display text-8xl font-extrabold;
 }
 
+/* === Title === */
 .title {
+  /* Section title with medium font weight and spacing */
   @apply font-display text-2xl font-semibold mt-4;
 }
 
+/* === Description === */
 .description {
+  /* Secondary text with smaller font size and spacing */
   @apply text-lg mt-2;
 }
 
+/* === Link === */
 .link {
-  @apply flex items-center justify-center mt-4 py-2 px-4 min-h-9 font-medium text-zinc-50 bg-indigo-500 hover:bg-indigo-600 rounded transition-colors;
+  /* Button style with hover effect and smooth transition */
+  @apply flex items-center justify-center mt-4 px-4 py-2 min-h-10 font-medium text-zinc-50 bg-indigo-500 hover:bg-indigo-600 rounded transition-colors;
 }

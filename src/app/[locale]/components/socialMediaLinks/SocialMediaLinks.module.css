@@ -1,7 +1,11 @@
+/* === Link === */
 .link {
-  @apply text-zinc-400;
+  /* Link styling */
+  @apply text-zinc-50;
 }
 
+/* === Icon === */
 .icon {
-  @apply w-6 h-auto scale-90;
+  /* Icon dimensions */
+  @apply w-6 h-auto;
 }
