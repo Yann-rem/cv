@@ -60,16 +60,18 @@ const Page: FC = () => {
             sectionRefs.current[index] = el;
           }}
         >
-          <div
-            className={classNames(styles["section-title-wrapper"], {
-              [styles["section-title-wrapper--right"]]: index % 2 === 0,
-            })}
-          >
-            <h1 className={classNames(styles["section-title"], "font-feature-custom")}>
-              {t(titleKey)}
-              <span className={styles["section-title-dot"]}>.</span>
-            </h1>
-            <div className={styles["section-divider"]}></div>
+          <div className={styles["section-title-container"]}>
+            <div
+              className={classNames(styles["section-title-wrapper"], {
+                [styles["section-title-wrapper--right"]]: index % 2 === 0,
+              })}
+            >
+              <h1 className={classNames(styles["section-title"], "font-feature-custom")}>
+                {t(titleKey)}
+                <span className={styles["section-title-dot"]}>.</span>
+              </h1>
+              <div className={styles["section-title-line"]}></div>
+            </div>
           </div>
           <Component />
         </section>
