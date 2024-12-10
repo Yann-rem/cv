@@ -6,13 +6,13 @@ interface EducationItem {
 
 export const educationItems: EducationItem[] = [
   {
-    dateRangeKey: "degree_2.date_range",
-    titleKey: "degree_2.title",
-    schoolKey: "degree_2.school",
+    dateRangeKey: "degree2.date_range",
+    titleKey: "degree2.title",
+    schoolKey: "degree2.school",
   },
   {
-    dateRangeKey: "degree_1.date_range",
-    titleKey: "degree_1.title",
-    schoolKey: "degree_1.school",
+    dateRangeKey: "degree1.date_range",
+    titleKey: "degree1.title",
+    schoolKey: "degree1.school",
   },
 ] as const;

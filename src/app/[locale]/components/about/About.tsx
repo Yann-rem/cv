@@ -12,9 +12,9 @@ const About: FC = () => {
 
   return (
     <div className={styles["paragraphs"]}>
-      <p className="paragraph">{t("paragraph_1")}</p>
-      <p className="paragraph">{t("paragraph_2")}</p>
-      <p className="paragraph">{t("paragraph_3")}</p>
+      <p className="paragraph">{t("paragraph1")}</p>
+      <p className="paragraph">{t("paragraph2")}</p>
+      <p className="paragraph">{t("paragraph3")}</p>
     </div>
   );
 };
