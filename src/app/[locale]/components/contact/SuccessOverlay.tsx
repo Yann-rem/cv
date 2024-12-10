@@ -29,26 +29,22 @@ const SuccessOverlay: FC<{ onClick: () => void }> = ({ onClick }) => {
           [
             `.${styles["success-icon"]} .check-line`,
             { strokeDashoffset: 0 },
-            { ease: "circInOut", duration: 2, at: "+1" },
+            { ease: "circInOut", duration: 1, at: "+1" },
           ],
-          [`.${styles["success-icon-container"]}`, { transform: "translate(0%)" }, { ease: "easeOut", duration: 2 }],
+          [`.${styles["success-icon-container"]}`, { transform: "translate(0%)" }, { ease: "easeOut", duration: 1 }],
           [
             `.${styles["success-message-title"]}`,
             { transform: "translate(0%)", opacity: 1 },
-            { ease: "easeOut", duration: 1 },
+            { ease: "easeOut", duration: 0.5 },
           ],
-          [
-            `.${styles["success-message-subtitle"]}`,
-            { transform: "translate(0%)", opacity: 1 },
-            { ease: "easeIn", duration: 1 },
-          ],
+          [`.${styles["success-message-subtitle"]}`, { opacity: 1 }, { ease: "easeOut", duration: 0.5, at: "-0.1" }],
         ]);
       };
 
       enterAnimation();
     } else {
       const exitAnimation = async () => {
-        await animate(scope.current, { opacity: 0 }, { ease: "easeIn", duration: 0.5 });
+        await animate(scope.current, { opacity: 0 }, { ease: "easeIn", duration: 0.2 });
 
         document.body.classList.remove("no-scroll");
 
