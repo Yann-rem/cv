@@ -97,7 +97,7 @@
 /* === Success Overlay === */
 .container {
   /* Full-screen fixed overlay */
-  @apply fixed flex items-center justify-center inset-0 bg-zinc-900/95 opacity-0 z-30;
+  @apply fixed flex items-center justify-center inset-0 bg-zinc-900/95 opacity-0 z-40;
 }
 
 .content {

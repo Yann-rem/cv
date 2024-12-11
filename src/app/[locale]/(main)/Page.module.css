@@ -24,7 +24,7 @@
 /* === Sections Title === */
 .section-title-container {
   /* Positioning and layout */
-  @apply sticky lg:static z-10 -top-6 lg:top-auto;
+  @apply sticky lg:static -top-6 lg:top-auto z-10;
 
   /* Background */
   @apply bg-zinc-900 lg:bg-transparent;
