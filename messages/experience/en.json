@@ -45,7 +45,7 @@
     "description": [
       "Worked closely with the client to define project requirements and adapt site functionalities",
       "Created site mockups and designed the company logo",
-      "Developed the server-side with data validation and database interaction",
+      "Server-side validation of form data and management of its interaction with the database",
       "Designed a user-friendly, responsive interface tailored to the client’s specific needs",
       "Implemented unit and integration tests to ensure code quality"
     ],

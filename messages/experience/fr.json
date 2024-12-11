@@ -45,7 +45,7 @@
     "description": [
       "Collaboration étroite avec le client pour définir les exigences du projet et adapter les fonctionnalités du site",
       "Maquettage du site et création du logo de l’entreprise",
-      "Développement de la partie serveur avec validation des données et interaction avec la base de données",
+      "Validation serveur des données des formulaires et gestion de leur interaction avec la base de données",
       "Conception d’une interface utilisateur conviviale et réactive, adaptée aux besoins spécifiques du client",
       "Mise en place de tests unitaires et d’intégrations pour assurer la qualité du code"
     ],
