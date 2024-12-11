@@ -2,7 +2,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { FC, ReactNode } from "react";
 
-import { inter } from "@/lib/fonts";
+import { inter, interDisplay } from "@/lib/fonts";
 
 import "@/styles/global.css";
 import styles from "./Layout.module.css";
@@ -27,7 +27,7 @@ const ErrorLayout: FC<{ children: ReactNode; params: { locale: string } }> = asy
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${inter.variable} font-sans`}>
+    <html lang={locale} className={`${inter.variable} font-sans ${interDisplay.variable} font-display`}>
       <head></head>
       <body className={styles["page-wrapper"]}>
         <NextIntlClientProvider messages={messages}>

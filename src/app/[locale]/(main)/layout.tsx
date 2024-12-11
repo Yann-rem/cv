@@ -4,7 +4,7 @@ import { FC, ReactNode } from "react";
 
 import { ActiveLinkIndexProvider } from "@/contexts/ActiveLinkIndexContext";
 import { BreakpointsProvider } from "@/contexts/BreakpointsContext";
-import { inter } from "@/lib/fonts";
+import { inter, interDisplay } from "@/lib/fonts";
 
 import Footer from "../components/footer/Footer";
 import Navbar from "../components/navbar/Navbar";
@@ -32,7 +32,7 @@ const MainLayout: FC<{ children: ReactNode; params: { locale: string } }> = asyn
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${inter.variable} font-sans`}>
+    <html lang={locale} className={`${inter.variable} font-sans ${interDisplay.variable} font-display`}>
       <head></head>
       <body>
         <NextIntlClientProvider messages={messages}>
