@@ -66,7 +66,7 @@ const ContactForm: FC = () => {
 
   const [statusMessage, setStatusMessage] = useState<string>("labels.submit");
   const [showSuccessOverlay, setShowSuccessOverlay] = useState(false);
-  const timerRef = useRef<NodeJS.Timeout | null>(null);
+  const timerRef = useRef<number | null>(null);
 
   const {
     register,
@@ -75,7 +75,6 @@ const ContactForm: FC = () => {
     formState: { errors },
     trigger,
     reset,
-    // } = useForm<Input>();
   } = useForm<Input>({ resolver: yupResolver(contactSchema()) });
 
   const onSubmit = async (data: Input) => {
@@ -105,8 +104,9 @@ const ContactForm: FC = () => {
           setStatus("server_configuration");
           setStatusMessage(errorData.message);
         } else if (errorData.type === "validation") {
+          setStatus("idle");
           errorData.errors?.forEach(({ field, message }) => {
-            setError(field, { type: "server", message: t(message) });
+            setError(field, { type: "server", message: message });
           });
         } else if (errorData.type === "internal_error") {
           setStatus("internal_error");
@@ -123,16 +123,14 @@ const ContactForm: FC = () => {
   };
 
   useUpdateEffect(() => {
-    console.debug("[Effet] État du statut");
-
     if (showSuccessOverlay) {
-      timerRef.current = setTimeout(() => {
+      timerRef.current = window.setTimeout(() => {
         setShowSuccessOverlay(false);
-      }, 15000000000);
+      }, 15000);
     }
 
     if (status === "server_configuration" || status === "internal_error" || status === "error") {
-      timerRef.current = setTimeout(() => {
+      timerRef.current = window.setTimeout(() => {
         setStatus("idle");
         setStatusMessage("labels.submit");
       }, 5000);
