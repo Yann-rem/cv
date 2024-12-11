@@ -107,6 +107,18 @@ const Navbar: FC<{ className?: string }> = ({ className }) => {
     animate([...menuToggleAnimation, ...navLinksAnimation]);
   }, [isOpen]);
 
+  useUpdateEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, [isOpen]);
+
   return (
     <nav {...(className && { className })} ref={scope}>
       <div className={styles["container"]}>
@@ -155,9 +167,10 @@ const Navbar: FC<{ className?: string }> = ({ className }) => {
               ))}
             </ul>
           </div>
-          <div>
-            <LanguageSwitcher className={styles["language-switcher"]} />
+          <div className={styles["submenu"]}>
             <SocialMediaLinks className={styles["social-media-links"]} />
+            <div className={styles["divider"]}></div>
+            <LanguageSwitcher className={styles["language-switcher"]} />
           </div>
         </div>
       </div>

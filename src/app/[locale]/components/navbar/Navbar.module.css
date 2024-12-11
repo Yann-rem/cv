@@ -70,16 +70,23 @@
   @apply text-zinc-50/50 hover:text-zinc-50;
 }
 
-/* === Language Switcher === */
-.language-switcher {
-  /* Language switcher container */
-  @apply relative mt-12 mb-24 lg:mb-auto w-fit;
+/* === Submenu === */
+.submenu {
+  @apply flex items-center mt-24 mb-24 lg:mb-0 lg:space-x-8;
 }
 
-/* === Social Media Links === */
+.language-switcher {
+  /* Language switcher container */
+  @apply relative w-fit;
+}
+
+.divider {
+  @apply hidden lg:block w-px h-7 bg-zinc-700;
+}
+
 .social-media-links {
   /* Social media links visible on large screens */
-  @apply hidden lg:flex items-center mt-5 w-fit space-x-5;
+  @apply hidden lg:flex items-center space-x-5 w-fit;
 }
 
 /* === Navigation Marker === */
