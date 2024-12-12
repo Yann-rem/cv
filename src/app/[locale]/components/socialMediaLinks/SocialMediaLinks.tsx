@@ -3,7 +3,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-import { FC, memo, MouseEvent, SVGProps, TouchEvent, useRef, useState } from "react";
+import { FC, memo, MouseEvent, SVGProps, useRef, useState } from "react";
 
 import { FacebookIcon, GitHubIcon, LinkedInIcon, XIcon } from "./Icons";
 
@@ -31,9 +31,7 @@ const SocialMediaLinks: FC<{ className?: string }> = ({ className }) => {
     event.preventDefault();
   };
 
-  const handleLinkTouchStart = (event: TouchEvent, name: string) => {
-    event.preventDefault();
-
+  const handleLinkTouchStart = (name: string) => {
     setLinkName(name);
 
     if (timerRef.current) {
@@ -62,7 +60,7 @@ const SocialMediaLinks: FC<{ className?: string }> = ({ className }) => {
           <Link
             href={href}
             onClick={(event) => handleLinkClick(event)}
-            onTouchStart={(event) => handleLinkTouchStart(event, name)}
+            onTouchStart={() => handleLinkTouchStart(name)}
             onMouseEnter={() => handleLinkMouseEnter(name)}
             onMouseLeave={handleLinkMouseLeave}
             className={styles["link"]}
