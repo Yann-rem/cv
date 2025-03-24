@@ -1,7 +1,7 @@
 {
   "programming_languages": {
     "title": "Langages de Programmation",
-    "list": "Python, JavaScript, TypeScript, HTML, CSS, Sass, VBA"
+    "list": "PHP, Python, JavaScript, TypeScript, HTML, CSS, Sass, VBA"
   },
   "libraries_frameworks": {
     "title": "Bibliothèques & Frameworks",
@@ -9,7 +9,7 @@
   },
   "tools_platforms": {
     "title": "Outils & Plateformes",
-    "list": "Node.js, Git, GitHub, Vite.js, Vercel, Webpack, Rollup, Figma, Anaconda, Jupyter"
+    "list": "Node.js, Git, GitHub, Vite.js, WAMP, Vercel, Webpack, Rollup, Figma, Anaconda, Jupyter"
   },
   "data_databases": {
     "title": "Données & Bases de Données",
