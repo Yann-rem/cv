@@ -1,7 +1,6 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { FC, memo, MouseEvent, SVGProps, useRef, useState } from "react";
 
@@ -13,13 +12,14 @@ interface SocialMediaLink {
   href: string;
   name: string;
   Icon: FC<SVGProps<SVGSVGElement>>;
+  active: boolean;
 }
 
 const socialMediaLinks: SocialMediaLink[] = [
-  { href: "#!", name: "LinkedIn", Icon: LinkedInIcon },
-  { href: "#!", name: "GitHub", Icon: GitHubIcon },
-  { href: "#!", name: "X", Icon: XIcon },
-  { href: "#!", name: "Facebook", Icon: FacebookIcon },
+  { href: "https://www.linkedin.com/in/remyyannick/", name: "LinkedIn", Icon: LinkedInIcon, active: true },
+  { href: "https://github.com/Yann-rem", name: "GitHub", Icon: GitHubIcon, active: true },
+  { href: "#", name: "X", Icon: XIcon, active: false },
+  { href: "#", name: "Facebook", Icon: FacebookIcon, active: false },
 ] as const;
 
 const SocialMediaLinks: FC<{ className?: string }> = ({ className }) => {
@@ -27,7 +27,7 @@ const SocialMediaLinks: FC<{ className?: string }> = ({ className }) => {
   const [linkName, setLinkName] = useState<string>("");
   const timerRef = useRef<number | null>(null);
 
-  const handleLinkClick = (event: MouseEvent) => {
+  const handleInactiveLinkClick = (event: MouseEvent) => {
     event.preventDefault();
   };
 
@@ -40,7 +40,6 @@ const SocialMediaLinks: FC<{ className?: string }> = ({ className }) => {
 
     timerRef.current = window.setTimeout(() => {
       setLinkName("");
-
       timerRef.current = null;
     }, 2000);
   };
@@ -55,22 +54,32 @@ const SocialMediaLinks: FC<{ className?: string }> = ({ className }) => {
 
   return (
     <ul {...(className && { className })}>
-      {socialMediaLinks.map(({ href, name, Icon }) => (
+      {socialMediaLinks.map(({ href, name, Icon, active }) => (
         <li key={name} className={styles["link-wrapper"]}>
-          <Link
-            href={href}
-            onClick={(event) => handleLinkClick(event)}
-            onTouchStart={() => handleLinkTouchStart(name)}
-            onMouseEnter={() => handleLinkMouseEnter(name)}
-            onMouseLeave={handleLinkMouseLeave}
-            className={styles["link"]}
-            aria-label={t("aria_label", { name })}
-            aria-disabled="true"
-          >
-            <div>
-              <Icon className={styles["icon"]} aria-hidden="true" />
-            </div>
-          </Link>
+          {active ? (
+            <a href={href} target="_blank" rel="noopener noreferrer" className={styles["link"]} aria-label={name}>
+              <div>
+                <Icon className={styles["icon"]} aria-hidden="true" />
+              </div>
+            </a>
+          ) : (
+            <a
+              href="#"
+              role="button"
+              onClick={handleInactiveLinkClick}
+              onTouchStart={() => handleLinkTouchStart(name)}
+              onMouseEnter={() => handleLinkMouseEnter(name)}
+              onMouseLeave={handleLinkMouseLeave}
+              className={styles["link"]}
+              aria-label={`${name} (lien inactif)`}
+              tabIndex={0}
+            >
+              <div>
+                <Icon className={styles["icon"]} aria-hidden="true" />
+              </div>
+            </a>
+          )}
+
           <AnimatePresence>
             {linkName === name && (
               <motion.div

@@ -6,7 +6,7 @@
 /* === Links === */
 .link {
   /* Link styling */
-  @apply text-zinc-400;
+  @apply text-zinc-400 hover:text-zinc-50 transition-colors;
 }
 
 /* === Icons === */
