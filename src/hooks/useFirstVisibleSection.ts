@@ -9,7 +9,7 @@ const useFirstVisibleSection = (
 
   useEffect(() => {
     if (typeof IntersectionObserver === "undefined") {
-      console.warn("IntersectionObserver is not supported in this browser");
+      console.warn("IntersectionObserver n'est pas supporté par votre navigateur.");
       return;
     }
 
@@ -28,6 +28,7 @@ const useFirstVisibleSection = (
 
       setFirstVisibleElement(visibleElements[0] ?? null);
     };
+
     const observer = new IntersectionObserver(
       (entries) => {
         manageVisibility(entries);
